@@ -1,10 +1,29 @@
 
 <html>
-<head>
-	<title>The Pax Language</title>
-</head>
+	<head>
+		<title>The Pax Language</title>
+	</head>
+	<body style="width: 100%">
+		<style>
+			@media screen and (min-width: 768px) {
+				#logo {
+					width: 20%;
+					max-width: 200px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				#logo {
+					width: 50%;
+					max-width: 1000px;
+				}
+			}
+		</style>
+		<div style="width: 100%; text-align: left; margin: 5px">
+			<img src="pax-logo-sept22-04.png" id="logo" alt="Pax Logo" />
+		</div>
 
-	<div style="text-align: center; font-family: sans-serif; position: fixed; top:50%; width: 100%; padding-right: 25px;"><span style="font-weight: bolder"> 
-		Pax</span> is a language for computer graphics and user interfaces. Pax has been under development since 2021.<br/><br/> More information is coming soon.
-	</div>
+		<div style="text-align: center; font-family: sans-serif; position: fixed; top:50%; width: 100%; padding-right: 25px;"> 
+			Pax is a Rust-based language for interactive graphics & GUIs. Pax has been under development since 2021.<br/><br/> More information is coming soon.
+		</div>
+	</body>
 </html>
