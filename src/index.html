@@ -14,9 +14,9 @@
         <meta charset="UTF-8">
         <meta data-hid="description" name="description" content="Pax is a Rust-based language for interactive graphics and GUIs">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:image" content="//static.pax.rs/images/pax-ogimage.png">
+        <meta property="og:image" content="//static.pax.dev/images/pax-ogimage.png">
         <meta property="og:title" content="Pax">
-        <meta property="og:description" content="Pax is a Rust-based language for interactive graphics and GUIs.">
+        <meta property="og:description" content="Pax is a highly native rendering engine & declarative UI language.">
         <meta property="twitter:card" content="summary">
         <meta property="twitter:site" content="@pax_lang">
         <meta property="twitter:image" content="https://static.pax.rs/images/pax-twitterimage.png">
@@ -40,24 +40,28 @@
 					width: 20%;
 					max-width: 200px;
 				}
-				.links-container {
-					transform: translateY(-23px)
-				}
 
 			}
 			@media screen and (max-width: 768px) {
 				#logo {
-					width: 50%;
+					width: 20%;
 					max-width: 1000px;
 				}
-				.links-container {
-					transform: translateY(30px)
+				.links {
+					transform: translateY(40px)
 				}
-
 			}
 
 			#logo {
 				margin-left: -25px;
+			}
+
+			.links {
+				font-size: larger;
+				font-weight: bold;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				text-align: center;
 			}
 
 			.links a {
@@ -74,42 +78,40 @@
 				background-color: transparent;
 			}
 		</style>
-		<div class="links" style="width: 100%; text-align: left; margin: 5px; color: black; font-size: larger;">
-			<img src="pax-logo-sept22-04.png" id="logo" alt="Pax Logo" style="margin-right: 50px;" />
-			<span class="links-container" style="display: inline-block; vertical-align: middle;">
-				<a href="https://docs.pax.rs/">Docs</a> &nbsp;&nbsp;&nbsp;
-				<a href="https://www.github.com/pax-lang/pax">GitHub</a> &nbsp;&nbsp;&nbsp;
-				<a href="https://discord.gg/Eq8KWAUc6b">Discord</a> &nbsp;&nbsp;&nbsp;
-				<a href="https://developing.pax.rs">Blog</a>
-			</span>
+		<div style="position: absolute; top: 40px; left: 25px; width: 600px; height: 600px;">
+			<img src="pax-logo-sept22-04.png" id="logo" alt="Pax Logo"  />
+		</div>
+
+		<div class="links">
+			<a href="https://docs.pax.rs/">Docs</a> &nbsp;&nbsp;&nbsp;
+			<a href="https://www.github.com/pax-lang/pax">GitHub</a> &nbsp;&nbsp;&nbsp;
+			<a href="https://discord.gg/Eq8KWAUc6b">Discord</a> &nbsp;&nbsp;&nbsp;
+			<a href="https://developing.pax.rs">Blog</a>
 		</div>
 
 		<div style="text-align: center; font-family: sans-serif;">
 
-
 			<div style=" width: 100%; margin: 0 auto; margin-top: 75px;">
-
-
-				<iframe width="560" height="315" style="width: 80%; max-width: 560px;" src="https://www.youtube.com/embed/xrN5nd9hjDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<br />
-				<br />
-				Pax is a declarative user interface language and 2D layout engine for Rust.  <br /><br />
-				Build cross-platform apps, websites, and games, with:
-				<div style="width: 450px; margin: 0 auto; text-align: left">
+				Pax is a cross-platform, highly native rendering engine & declarative user interface language.  <br /><br />
+				Declare Pax UIs for native apps & websites, then drive logic with your favorite programming language — starting with Rust. 
+				<h4>Features:</h4>
+				<div style="width: 550px; margin: 0 auto; text-align: left">
 					<ul>
-						<li>Native UI elements, text, and scrolling</li>
-						<li>Responsive layouts</li>
+						<li>Fast (240FPS) rendering and a lightweight (&lt;100KB) runtime</li>
+						<li>Native UI elements, text, and scrolling, with robust accessibility & screen reader support.</li>
+						<li>Creative freedom: mix & match drawing elements and UI elements in the same coordinate space</li>
 						<li>Reusable & composable UI components</li>
-						<li>Declarative templates & property bindings</li>
-						<li>Accessibility & screen reader support</li>
-						<li>Free-form vector drawing APIs</li>
+						<li>Responsive 2D layouts and escape hatches for platform-specific customization</li>
 						<li>Powerful animation APIs</li>
 					</ul>
 				</div>
-				Pax is MIT & Apache licensed, being developed in the open in a pre-alpha <a href="https://docs.pax.rs/status-sept-2022.html">public preview</a>.<br /><br />
+				Pax is MIT & Apache licensed, being <a href="https://www.github.com/pax-lang/pax">developed in the open.</a>  Currently pre-alpha.
 
 
-				<h3>Get our newsletter in your inbox:</h3>
+				<br/>
+				
+				<br />
+				<h4>Get our newsletter in your inbox:</h4>
 				<iframe src="https://developing.pax.rs/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 			</div>
 		</div>
