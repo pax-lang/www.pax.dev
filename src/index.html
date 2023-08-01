@@ -1,119 +1,46 @@
-<html>
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MG3GLRDHYR"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pax Web</title><style>html, body, #mount, canvas, .native-overlay, #clipping-container {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
 
-			gtag('config', 'G-MG3GLRDHYR');
-		</script>
+            #mount {
+                position: relative;
+            }
 
+            .canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
 
-        <meta charset="UTF-8">
-        <meta data-hid="description" name="description" content="Pax is a Rust-based language for interactive graphics and GUIs">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:image" content="//static.pax.dev/images/pax-ogimage.png">
-        <meta property="og:title" content="Pax">
-        <meta property="og:description" content="Pax is a highly native rendering engine & declarative UI language.">
-        <meta property="twitter:card" content="summary">
-        <meta property="twitter:site" content="@pax_lang">
-        <meta property="twitter:image" content="https://static.pax.rs/images/pax-twitterimage.png">
-        <meta property="twitter:title" content="Pax">
-        <meta property="twitter:description" content="Pax is a Rust-based language for interactive graphics and GUIs.">
-		<title>Pax</title>
-	</head>
-	<body style="width: 100%;">
-		<style>
+            #clipping-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
 
+            .native-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
 
-			body {
-				font-size: 18px;
-				width: 100%;
-				margin: 0 20px 0 20px;
-			}
+            .native-overlay:focus {
+                outline: none;
+            }
 
+            .native-clipping {
+                position: absolute;                
+            }
 
-			@media screen and (min-width: 768px) {
-				#logo {
-					width: 20%;
-					max-width: 200px;
-				}
-
-			}
-			@media screen and (max-width: 768px) {
-				#logo {
-					width: 20%;
-					max-width: 1000px;
-				}
-				.links {
-					transform: translateY(40px)
-				}
-			}
-
-			#logo {
-				margin-left: -25px;
-			}
-
-			.links {
-				font-size: larger;
-				font-weight: bold;
-				margin-top: 50px;
-				margin-bottom: 50px;
-				text-align: center;
-			}
-
-			.links a {
-				font-family: sans-serif;
-				font-weight: bold; 
-			}
-
-			a:link {
-				color: black;
-				background-color: transparent;
-			}
-			a:visited {
-				color: black;
-				background-color: transparent;
-			}
-		</style>
-		<div style="position: absolute; top: 40px; left: 25px; width: 600px; height: 600px;">
-			<img src="pax-logo-sept22-04.png" id="logo" alt="Pax Logo"  />
-		</div>
-
-		<div class="links">
-			<a href="https://docs.pax.rs/">Docs</a> &nbsp;&nbsp;&nbsp;
-			<a href="https://www.github.com/pax-lang/pax">GitHub</a> &nbsp;&nbsp;&nbsp;
-			<a href="https://discord.gg/Eq8KWAUc6b">Discord</a> &nbsp;&nbsp;&nbsp;
-			<a href="https://developing.pax.rs">Blog</a>
-		</div>
-
-		<div style="text-align: center; font-family: sans-serif;">
-
-			<div style=" width: 100%; margin: 0 auto; margin-top: 75px;">
-				Pax is a cross-platform, highly native rendering engine & declarative user interface language.  <br /><br />
-				Declare Pax UIs for native apps & websites, then drive logic with your favorite programming language — starting with Rust. 
-				<h4>Features:</h4>
-				<div style="width: 550px; margin: 0 auto; text-align: left">
-					<ul>
-						<li>Fast (240FPS) rendering and a lightweight (&lt;100KB) runtime</li>
-						<li>Native UI elements, text, and scrolling, with robust accessibility & screen reader support.</li>
-						<li>Creative freedom: mix & match drawing elements and UI elements in the same coordinate space</li>
-						<li>Reusable & composable UI components</li>
-						<li>Responsive 2D layouts and escape hatches for platform-specific customization</li>
-						<li>Powerful animation APIs</li>
-					</ul>
-				</div>
-				Pax is MIT & Apache licensed, being <a href="https://www.github.com/pax-lang/pax">developed in the open.</a>  Currently pre-alpha.
-
-
-				<br/>
-				
-				<br />
-				<h4>Get our newsletter in your inbox:</h4>
-				<iframe src="https://developing.pax.rs/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-			</div>
-		</div>
-	</body>
-</html>
+            .native-leaf {
+                white-space: pre-wrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                transform-origin: top left;
+                pointer-events: auto;
+                position: absolute;
+            }</style></head><body><div id="mount"></div><script src="index.js"></script></body></html>
