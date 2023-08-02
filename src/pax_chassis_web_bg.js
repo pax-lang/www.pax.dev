@@ -665,8 +665,8 @@ export function __wbindgen_memory() {
     return addHeapObject(ret);
 };
 
-export function __wbindgen_closure_wrapper551(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 420, __wbg_adapter_20);
+export function __wbindgen_closure_wrapper553(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 422, __wbg_adapter_20);
     return addHeapObject(ret);
 };
 
