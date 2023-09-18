@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG3GLRDHYR">
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MG3GLRDHYR');
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Pax</title>
+    </head>
+    <body>
+        <div id="mount"></div>
+        <script src="pax_modules/PaxWebsite/index.js"></script>
+        <script>
+            if (window.Pax instanceof Promise) {
+                window.Pax.then(PaxModule => {
+                    if (typeof PaxModule.mount === 'function') {
+                        PaxModule.mount("#mount");
+                    } else {
+                        console.error("mount function is missing from the Pax module.");
+                    }
+                }).catch(error => {
+                    console.error("Error initializing Pax module:", error);
+                });
+            } else {
+                console.error("Pax module failed to load.");
+            }
+        </script>
+    </body>
+</html>

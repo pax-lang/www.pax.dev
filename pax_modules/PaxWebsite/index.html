@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pax Web</title></head><body><div id="mount"></div><script src="index.js"></script><script>if (window.Pax instanceof Promise) {
+                window.Pax.then(PaxModule => {
+                    if (typeof PaxModule.mount === 'function') {
+                        PaxModule.mount("#mount");
+                    } else {
+                        console.error("mount function is missing from the Pax module.");
+                    }
+                }).catch(error => {
+                    console.error("Error initializing Pax module:", error);
+                });
+            } else {
+                console.error("Pax module failed to load.");
+            }</script></body></html>

@@ -4,7 +4,7 @@
     "Zack Brown <zack@pax.dev>"
   ],
   "description": "Platform-specific chassis allowing Pax cartridges to be executed as Web apps",
-  "version": "0.6.8",
+  "version": "0.6.17",
   "license": "MIT OR Apache-2.0",
   "repository": {
     "type": "git",
