@@ -13,23 +13,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Pax</title>
+        <base href="src/website/.pax/build/release/web/">
     </head>
     <body>
-        <div id="mount"></div>
-        <script src="pax_modules/PaxWebsite/index.js"></script>
+        <div id="mount">
+        </div>
+        <script src="pax-chassis-web-interface.js"></script>
         <script>
-            if (window.Pax instanceof Promise) {
-                window.Pax.then(PaxModule => {
-                    if (typeof PaxModule.mount === 'function') {
-                        PaxModule.mount("#mount");
-                    } else {
-                        console.error("mount function is missing from the Pax module.");
-                    }
-                }).catch(error => {
-                    console.error("Error initializing Pax module:", error);
-                });
+            if (typeof window.Pax.mount === 'function') {
+                const basePath = window.location.origin + window.location.pathname + "src/website/.pax/build/release/web/";
+                window.Pax.mount("#mount", basePath + "pax-chassis-web");
             } else {
-                console.error("Pax module failed to load.");
+                console.error("Pax cartridge failed to load or was malformed.");
             }
         </script>
     </body>
