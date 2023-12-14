@@ -3,10 +3,10 @@
     <Frame x=50% y=90px width=80% height=75px anchor_x=50% anchor_y=50% >
          <Stacker cells=5 height=75px direction=StackerDirection::Horizontal gutter=8px>
             <Image path="assets/images/pax-logo-light.png" width=125px height=42px y=50% anchor_y=50% x=20px />
-            <Text text="<a href='https://docs.pax.rs' target='_blank'>Docs</a>" class=link />
+            <Text text="<a href='https://docs.pax.dev' target='_blank'>Docs</a>" class=link />
             <Text text="<a href='https://www.github.com/pax-lang/pax' target='_blank'>Github</a>" class=link />
             <Text text="<a href='https://discord.gg/Eq8KWAUc6b' target='_blank'>Discord</a>" class=link />
-            <Text text="<a href='https://developing.pax.rs' target='_blank'>Blog</a>" class=link />
+            <Text text="<a href='https://developing.pax.dev' target='_blank'>Blog</a>" class=link />
          </Stacker>
         <Rectangle
             fill={Fill::linearGradient(
@@ -27,7 +27,7 @@
             <Frame id=f1>
                 <Stacker cells=2 direction=StackerDirection::Vertical gutter=20px sizes={[Option::Some(70%), Option::None]} >
                     <Text text="Pax is a user interface engine \n for native apps & websites" class=h1 />
-                    <Text text="[Docs](https://docs.pax.rs) | [GitHub](https://www.github.com/pax-lang/pax) | [Get Started](https://www.github.com/pax-lang/pax)" id=l1 />
+                    <Text text="[Docs](https://docs.pax.dev) | [GitHub](https://www.github.com/pax-lang/pax) | [Get Started](https://www.github.com/pax-lang/pax)" id=l1 />
                 </Stacker>
             </Frame>
             <Rectangle width=100% height=100%
@@ -57,7 +57,7 @@
         <Stacker cells=3 direction=StackerDirection::Vertical gutter=10px sizes={[Option::Some(40%), Option::Some(40%), Option::None]} >
             <Text text="CREATE COLLABORATIVELY" class=h2/>
             <Text text="Pax’s declarative language is grammatically constrained to be readable & writable by visual tooling. Our team is building a collaborative visual designer for Pax so anyone on your team can contribute to codebases" class=p2 />
-            <Text text="[Sign up for updates](https://developing.pax.rs)" id=l2 />
+            <Text text="[Sign up for updates](https://developing.pax.dev)" id=l2 />
         </Stacker>
         </Frame>
         <Rectangle width=100% height=1000px

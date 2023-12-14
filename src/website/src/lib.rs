@@ -16,7 +16,7 @@ use crate::website_mobile::WebsiteMobile;
 #[main]
 #[inlined(
     <Frame width=100% height=100% @did_mount=handle_did_mount @will_render=handle_will_render >
-     if container_width > 800.0  {
+    if container_width > 800.0  {
         <WebsiteDesktop />
     }
     if container_width == 800.0 || container_width < 800.0 {
