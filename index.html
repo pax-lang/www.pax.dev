@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pax</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ivu7epf.css">
+    <style>
+        body {
+            font-family: ff-real-headline-pro, sans-serif;
+            font-style: normal;
+            font-weight: 200;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .logo {
+            margin-bottom: 40px;
+        }
+        .logo img {
+            max-width: 300px;
+            width: 100%;
+        }
+        .video-container {
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 640px; /* 2x the original width */
+            aspect-ratio: 16 / 9;
+            position: relative;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            background-color: #000;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.25); /* Added drop shadow */
+        }
+
+        /* Optional: Add a hover effect to make the button more interactive */
+        .cta-button:hover {
+            box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.25);
+            transition: all 0.5s ease;
+        }
+        .bottom-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .bottom-links a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 18px;
+        }
+        .bottom-links img {
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .logo img {
+                max-width: 200px;
+            }
+            .cta-button {
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+            .bottom-links {
+                gap: 20px;
+            }
+            .bottom-links img {
+                width: 30px;
+                height: 30px;
+            }
+            .bottom-links a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo"><img src="assets/pax-create-logo.png" alt="Pax Create Logo" /></div>
+    
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/crI_raloHgo?si=44I46T1haXIRzLFi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <p>Build user interfaces, visually</p>
+    
+    <a href="https://airtable.com/appCUQtUS9g4kuQZL/pagcoNLd0e8amZB0D/form">
+        <button class="cta-button">Get early access</button>
+    </a>
+    
+    <div class="bottom-links">
+        <a href="https://docs.pax.dev/"><img src="assets/icon-docs.png" alt="Docs"><span>Docs</span></a>
+        <a href="https://www.github.com/paxengine/pax"><img src="assets/icon-github.png" alt="GitHub"><span>GitHub</span></a>
+        <a href="https://discord.com/invite/Eq8KWAUc6b"><img src="assets/icon-discord.png" alt="Discord"><span>Discord</span></a>
+    </div>
+</body>
+</html>
