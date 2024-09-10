@@ -1,0 +1,14 @@
+{
+  "name": "starter-project",
+  "version": "0.36.3",
+  "files": [
+    "pax-cartridge_bg.wasm",
+    "pax-cartridge.js",
+    "pax-cartridge.d.ts"
+  ],
+  "module": "pax-cartridge.js",
+  "types": "pax-cartridge.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

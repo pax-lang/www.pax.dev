@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+     <!-- Google tag (gtag.js) -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MG3GLRDHYR"></script>
+     <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+ 
+     gtag('config', 'G-MG3GLRDHYR');
+     </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pax - Build UIs visually</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" rel="preload" href="https://use.typekit.net/ivu7epf.css">
+    <link rel="icon" href="/assets/Pax-logo.svg" type="image/svg+xml">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pax-black': '#1A1A1A',
+                        'pax-gray': '#2A2A2A',
+                        'pax-light-gray': '#E0E0E0',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: ff-real-headline-pro, sans-serif;
+            background-color: #2A2A2A;
+            color: #E0E0E0;
+        }
+        .iframe-container {
+            position: relative;
+            padding-bottom: 75%; /* 4:3 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed top-0 left-0 right-0 bg-pax-black z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-pax-light-gray">
+                <img src="assets/Pax-logo.png" alt="Pax Logo" class="h-8">
+            </a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a target="_blank" href="https://developing.pax.dev" class="text-pax-light-gray hover:text-white transition-colors">Blog</a></li>
+                    <li><a target="_blank" href="https://github.com/paxengine/pax" class="text-pax-light-gray hover:text-white transition-colors">GitHub</a></li>
+                    <li><a target="_blank" href="https://discord.com/invite/Eq8KWAUc6b" class="text-pax-light-gray hover:text-white transition-colors">Discord</a></li>
+                    <li><a target="_blank" href="https://docs.pax.dev/installation/operating-systems/macos/" class="bg-pax-gray text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-pax-light-gray hover:text-pax-black transition-colors">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <section id="hero" class="bg-pax-black text-white py-32">
+            <div class="container mx-auto px-4 text-center">
+                <img src="assets/Pax-logo.svg" alt="Pax Large Icon" class="h-64 mx-auto mb-8">
+                <h1 class="text-5xl font-bold mb-4">Build UIs visually in Rust</h1>
+                <p class="text-xl mb-8">A library for building web & native applications alongside visual creative tools</p>
+                <a target="_blank" href="https://docs.pax.dev/getting-started/start-creating-a-project.html" class="bg-white text-pax-black px-8 py-3 rounded-full font-bold hover:bg-pax-light-gray transition-colors">Get Started</a>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-pax-gray">
+            <div class="container mx-auto px-4">
+                <div class="mb-24 max-w-5xl mx-auto">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/crI_raloHgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-lg shadow-2xl"></iframe>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <div class="text-center p-6 bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-globe text-4xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2 text-white">Cross Platform</h3>
+                        <p>Build once, run anywhere. Deploy on multiple platforms</p>
+                    </div>
+                    <div class="text-center p-6 bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-bolt text-4xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2 text-white">Performance</h3>
+                        <p>240 fps Rust runtime with wgpu coming soon</p>
+                    </div>
+                    <div class="text-center p-6 bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-code-branch text-4xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2 text-white">Open Source</h3>
+                        <p>Fully open source with MIT license for maximum flexibility</p>
+                    </div>
+                    <div class="text-center p-6 bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-universal-access text-4xl text-white mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2 text-white">Accessibility & SEO</h3>
+                        <p>Native support for screen-reader and SEO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="py-24 bg-pax-black">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center text-white">How It Works</h2>
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-2/3 mb-8 lg:mb-0">
+                        <img src="assets/How it works.png" alt="How Pax works" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="lg:w-1/3 lg:pl-12">
+                        <div class="space-y-8">
+                            <div class="p-6 bg-pax-gray rounded-lg shadow-lg">
+                                <h3 class="text-2xl font-bold mb-2 text-white">1. Design</h3>
+                                <p class="text-lg">Create your UI visually using our integrated design tool</p>
+                            </div>
+                            <div class="p-6 bg-pax-gray rounded-lg shadow-lg">
+                                <h3 class="text-2xl font-bold mb-2 text-white">2. Code</h3>
+                                <p class="text-lg">Attach Rust code for application logic and backend integration</p>
+                            </div>
+                            <div class="p-6 bg-pax-gray rounded-lg shadow-lg">
+                                <h3 class="text-2xl font-bold mb-2 text-white">3. Deploy</h3>
+                                <p class="text-lg">Compile and run your application on your target platform</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-24 bg-pax-gray">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center text-white">Gallery</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <div class="relative w-full" style="padding-top: 55.89%;">
+                            <video class="absolute top-0 left-0 w-full h-full" autoplay loop muted playsinline>
+                                <source src="https://static.pax.dev/space-game/space-game.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <a target="_blank" href="https://github.com/paxengine/pax/tree/master/examples/src/space-game" class="text-pax-light-gray hover:text-white transition-colors text-sm">Source Code</a>
+                            <a target="_blank" href="https://static.pax.dev/space-game" class="text-pax-light-gray hover:text-white transition-colors text-sm">Full Page View</a>
+                        </div>
+                    </div>
+                    <div class="bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <div class="relative w-full" style="padding-top: 55.89%;">
+                            <video class="absolute top-0 left-0 w-full h-full" autoplay loop muted playsinline>
+                                <source src="https://static.pax.dev/slot-particles/slot-particles.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <a target="_blank" href="https://github.com/paxengine/pax/tree/master/examples/src/slot-particles" class="text-pax-light-gray hover:text-white transition-colors text-sm">Source Code</a>
+                            <a target="_blank" href="https://static.pax.dev/slot-particles" class="text-pax-light-gray hover:text-white transition-colors text-sm">Full Page View</a>
+                        </div>
+                    </div>
+                    <div class="bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <div class="relative w-full" style="padding-top: 55.89%;">
+                            <video class="absolute top-0 left-0 w-full h-full" autoplay loop muted playsinline>
+                                <source src="https://static.pax.dev/particles/particles.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <a target="_blank" href="https://github.com/paxengine/pax/tree/master/examples/src/particles" class="text-pax-light-gray hover:text-white transition-colors text-sm">Source Code</a>
+                            <a target="_blank" href="https://static.pax.dev/particles" class="text-pax-light-gray hover:text-white transition-colors text-sm">Full Page View</a>
+                        </div>
+                    </div>
+                    <div class="bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <div class="relative w-full" style="padding-top: 55.89%;">
+                            <video class="absolute top-0 left-0 w-full h-full" autoplay loop muted playsinline>
+                                <source src="https://static.pax.dev/color-picker/color-picker.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <a target="_blank" href="https://github.com/paxengine/pax/tree/master/examples/src/color-picker" class="text-pax-light-gray hover:text-white transition-colors text-sm">Source Code</a>
+                            <a target="_blank" href="https://static.pax.dev/color-picker" class="text-pax-light-gray hover:text-white transition-colors text-sm">Full Page View</a>
+                        </div>
+                    </div>
+                    <div class="bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <div class="relative w-full" style="padding-top: 55.89%;">
+                            <video class="absolute top-0 left-0 w-full h-full" autoplay loop muted playsinline>
+                                <source src="https://static.pax.dev/game-of-life/game-of-life.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <a target="_blank" href="https://github.com/paxengine/pax/tree/master/examples/src/game-of-life" class="text-pax-light-gray hover:text-white transition-colors text-sm">Source Code</a>
+                            <a target="_blank" href="https://static.pax.dev/game-of-life" class="text-pax-light-gray hover:text-white transition-colors text-sm">Full Page View</a>
+                        </div>
+                    </div>
+                    <div class="bg-pax-black rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <div class="relative w-full" style="padding-top: 55.89%;">
+                            <video class="absolute top-0 left-0 w-full h-full" autoplay loop muted playsinline>
+                                <source src="https://static.pax.dev/calculator/calculator.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="p-2 flex justify-between">
+                            <a target="_blank" href="https://github.com/paxengine/pax/tree/master/examples/src/calculator" class="text-pax-light-gray hover:text-white transition-colors text-sm">Source Code</a>
+                            <a target="_blank" href="https://static.pax.dev/calculator" class="text-pax-light-gray hover:text-white transition-colors text-sm">Full Page View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="py-24 bg-pax-black">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-12 text-white">Ready to get started?</h2>
+                <div class="flex justify-center space-x-12">
+                    <a href="https://docs.pax.dev/installation/operating-systems/macos/" target="_blank" class="flex flex-col items-center group">
+                        <i class="fas fa-rocket text-4xl mb-2 text-pax-light-gray group-hover:text-white transition-colors"></i>
+                        <span class="text-pax-light-gray group-hover:text-white transition-colors">Get Started</span>
+                    </a>
+                    <a href="https://github.com/paxengine/pax" target="_blank" class="flex flex-col items-center group">
+                        <i class="fab fa-github text-4xl mb-2 text-pax-light-gray group-hover:text-white transition-colors"></i>
+                        <span class="text-pax-light-gray group-hover:text-white transition-colors">GitHub</span>
+                    </a>
+                    <a href="https://discord.com/invite/Eq8KWAUc6b" target="_blank" class="flex flex-col items-center group">
+                        <i class="fab fa-discord text-4xl mb-2 text-pax-light-gray group-hover:text-white transition-colors"></i>
+                        <span class="text-pax-light-gray group-hover:text-white transition-colors">Discord</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
